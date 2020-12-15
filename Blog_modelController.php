@@ -23,3 +23,5 @@ class Blog_modelController extends AbstractController
 		return $posts;
 
  	}
+ }
+ ?>
