@@ -24,11 +24,11 @@ class BlogController extends AbstractController
  		$this->validator = $validator;
  	}
 	/**
- 		* @Route("/posts", name="posts")
+ 		* @Route("/blog", name="blog")
  	*/
  	public function index()
  	{
- 		$data['posts'] = $this->posts_model->get_all();
+ 		$data['blog'] = $this->blog_model->get_all();
  		return $this->render('index_template.html.twig', $data);
  	}
 }
