@@ -60,21 +60,21 @@
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="messi.jpg" alt="Messi" width="1100" height="500">
+      <img src="{{ asset('images/messi.jpg') }}" alt="Messi" width="1100" height="500">
       <div class="carousel-caption">
         <h3>Lionel Messi</h3>
         <p>Desculpa Portugal, mas este é o melhor de sempre!</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="ronaldo.jpg" alt="Ronaldo" width="1100" height="500">
+      <img src="{{ asset('images/ronaldo.jpg') }}" alt="Ronaldo" width="1100" height="500">
       <div class="carousel-caption">
         <h3>Air Ronaldo</h3>
         <p>A história do melhor golo de sempre na Champions League que perdeu o "Puskas" para um golo banal</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="ronaldinho.jpg" alt="Ronaldinho" width="1100" height="500">
+      <img src="{{ asset('images/ronaldinho.jpg') }}" alt="Ronaldinho" width="1100" height="500">
         <div class="carousel-caption">
         <h3>Ronaldinho</h3>
        <p> Futebol de rua <i class='fas fa-handshake'style='font-size:20px'></i> Futebol profissional</p>
@@ -104,10 +104,8 @@
           <p>{$p.updated_at}</p>
           <p>created:</p>
           <p>{$p.created_at}</p>
-          {if $session_id != 0 and $session_id == $p.user_id}
           <p><a class="link" href="#">
-           Update post</a></p>{else}
-          {/if}
+           Update post</a></p>
         </div>
     </div>
   </div>
