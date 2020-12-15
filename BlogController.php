@@ -29,6 +29,11 @@ class BlogController extends AbstractController
  	public function index()
  	{
  		$data['posts'] = $this->blog_model->get_posts();
+ 		$data['menu0'] = "home";
+ 		$data['menu1'] = "logout";
+ 		$data['menu2'] = "post";
+ 		$data['welcome'] = "Welcome Bruno Serro";
+
  		return $this->render('blog/index_template.html.twig', $data);
  	}
 }

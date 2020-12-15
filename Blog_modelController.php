@@ -11,7 +11,7 @@ class Blog_modelController extends AbstractController
  	{
  		$this->connection = $connection;
  	}
-
+ 	
  	public function get_posts()
  	{
  		$sql  = "SELECT microposts.title, microposts.content, microposts.created_at, microposts.updated_at, users.name
